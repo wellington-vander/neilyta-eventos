@@ -3,7 +3,11 @@
 }
 
 .bg-color{
-    background-color: #624CAB;
+    background: linear-gradient(90deg, rgba(72,34,199,1) 0%, rgba(98,76,171,1) 100%);
+}
+
+#logout-btn:hover {
+    background: linear-gradient(90deg, rgba(98,76,171,1) 0%, rgba(72,34,199,1) 100%) !important;
 }
 
 #nav-logo {
@@ -11,6 +15,11 @@
     align-self: center;
 }
 
-.btn-small {
+.btn, .btn-small {
     border-radius: 20px;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
