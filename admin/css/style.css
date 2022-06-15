@@ -1,7 +1,8 @@
-:root {
-    --cor-principal: #624CAB;
-}
 
+body {
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+}
 .bg-color{
     background: linear-gradient(90deg, rgba(72,34,199,1) 0%, rgba(98,76,171,1) 100%);
 }
@@ -22,4 +23,34 @@
 a {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+}
+
+.sec-bar {
+    display: flex;
+    height: 40px;
+    background: linear-gradient(90deg, rgb(0, 207, 183) 0%, rgba(27,153,139,1) 100%);
+    position: relative;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-bar p {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-align: center !important;
+}
+
+.pri-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(10px);
+}
+
+.sec-container {
+    
 }

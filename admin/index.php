@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-32x32.png">
     <title>Painel do Admistrador</title>
 </head>
 
@@ -16,18 +18,22 @@
     <!-- Barra de Navegação -->
     <nav>
         <div class="nav-wrapper bg-color">
-            <a href="#!" class="brand-logo"><img id="nav-logo" src="img/neilyta.svg" alt="" title="Neilyta Eventos"></a>
-            <a href="#!" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="">Home</a></li>
-                <li><a class="btn bg-color" id="logout-btn" href=""><i class="material-icons left">directions_walk</i> Sair</a></li>
-            </ul>
+            <a href="#!" class="brand-logo center"><img id="nav-logo" src="img/neilyta.svg" alt="" title="Neilyta Eventos"></a>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sair</a></li>
-    </ul>
+
+    <div class="sec-bar">
+        <p>Administrador</p>
+    </div>
+
+    </div>
+
+    <div class="pri-container">
+        <div class="sec-container">
+            a
+        </div>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
