@@ -1,0 +1,16 @@
+:root {
+    --cor-principal: #624CAB;
+}
+
+.bg-color{
+    background-color: #624CAB;
+}
+
+#nav-logo {
+    padding: 14px;
+    align-self: center;
+}
+
+.btn-small {
+    border-radius: 20px;
+}
