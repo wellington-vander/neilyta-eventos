@@ -110,7 +110,6 @@ a {
     font-family: 'Inter', sans-serif;
     color: #f94d00;
     font-weight: bold;
-    text-align: center !important;
     margin: 5px 0;
     font-size: 22px;
 }
@@ -127,4 +126,12 @@ a {
 
 .colunas .input-cont {
     width: 48%;
+}
+
+.dropdown-content {
+    max-height: 200px !important;
+}
+
+input[type=text]:not(.browser-default) {
+    height: 2.5rem;
 }

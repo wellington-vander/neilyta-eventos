@@ -57,7 +57,7 @@
                 <div class="colunas">
                     <div class="input-cont">
                         <label for="estado">Estado:</label>
-                        <select class="browser-default"id="estado" name="estado">
+                        <select id="estado" name="estado">
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
