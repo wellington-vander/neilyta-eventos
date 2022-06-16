@@ -6,6 +6,7 @@ html,
 body {
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
+    background-size: cover;
 }
 .bg-color{
     background: linear-gradient(90deg, #4822c7 0%, #624cab 100%);
@@ -14,6 +15,33 @@ body {
 #logout-btn:hover {
     background: linear-gradient(90deg, rgba(98,76,171,1) 0%, rgba(72,34,199,1) 100%) !important;
 }
+
+.login-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#ne-logo-login {
+    width: 150px;
+    margin: 40px 0 0 0;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.363);
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    backdrop-filter: blur(11px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 #nav-logo {
     padding: 14px;
