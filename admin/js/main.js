@@ -1,3 +1,3 @@
-
-elemsSidenav = document.querySelectorAll(".sidenav");
-const instacesSidenav = M.Sidenav.init(elemsSidenav);
+// Materialize
+const elemsCollapsible = document.querySelectorAll(".collapsible");
+const instancesCollapsible = M.Collapsible.init(elemsCollapsible);

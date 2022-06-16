@@ -1,10 +1,14 @@
+html,
+:root {
+  height: 100%;
+}
 
 body {
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
 }
 .bg-color{
-    background: linear-gradient(90deg, rgba(72,34,199,1) 0%, rgba(98,76,171,1) 100%);
+    background: linear-gradient(90deg, #4822c7 0%, #624cab 100%);
 }
 
 #logout-btn:hover {
@@ -43,7 +47,7 @@ a {
 }
 
 .pri-container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,5 +56,75 @@ a {
 }
 
 .sec-container {
-    
+    height: 100%;
+    width: 60%;
+}
+
+@media(max-width:900px){
+    div.sec-containe{
+        width: 80%;
+    }
+}
+@media(max-width:600px){
+    div.sec-containe{
+        width: 100%;
+    }
+}
+
+.cont-icons {
+    color: #624cab;
+}
+
+.cont-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #624cab;
+}
+
+.collapsible-header{
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.collapsible-header:hover {
+    background-color: #624cab;
+    transition: 0.5s;
+}
+
+.collapsible-header:hover i,.modal-trigger .collapsible-header:hover label {
+    color: #fff;
+    transition: 0.5s;
+} 
+
+.collapsible {
+    border-radius: 21px;
+}
+
+.modal {
+    max-height: 90% !important;
+    border-radius: 20px;
+}
+
+#form-cad legend {
+    font-family: 'Inter', sans-serif;
+    color: #f94d00;
+    font-weight: bold;
+    text-align: center !important;
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.input-cont {
+    margin: 5px 0;
+}
+
+.colunas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colunas .input-cont {
+    width: 48%;
 }
