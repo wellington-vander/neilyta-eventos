@@ -22,17 +22,20 @@ body {
 
 .btn, .btn-small {
     border-radius: 20px;
+    background-color: #00cfb7;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
 }
 
 a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 500;
 }
 
 .sec-bar {
     display: flex;
     height: 40px;
-    background: linear-gradient(90deg, rgb(0, 207, 183) 0%, rgba(27,153,139,1) 100%);
+    background: linear-gradient(90deg, #00cfb7 0%, #22c2af 100%);
     position: relative;
     margin: 0;
     align-items: center;
@@ -40,7 +43,7 @@ a {
 }
 
 .sec-bar p {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Kanit', sans-serif !important;
     font-weight: 700 !important;
     color: #fff !important;
     text-align: center !important;
@@ -76,7 +79,7 @@ a {
 }
 
 .cont-label {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: #624cab;
@@ -102,16 +105,28 @@ a {
 }
 
 .modal {
-    max-height: 90% !important;
+    max-height: 100% !important;
     border-radius: 20px;
+    top: -15% !important
 }
 
+.modal .modal-content {
+    padding: 20px;
+}
+#form-cad {
+    display: flex;
+    flex-direction: column;
+}
 #form-cad legend {
-    font-family: 'Inter', sans-serif;
-    color: #f94d00;
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(90deg, rgba(98,76,171,1) 0%, rgba(72,34,199,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
     margin: 5px 0;
     font-size: 22px;
+    text-align: center;
 }
 
 .input-cont {
@@ -135,3 +150,12 @@ a {
 input[type=text]:not(.browser-default) {
     height: 2.5rem;
 }
+
+#form-cad label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+.input-cont input[type=text]:focus {
+    border-bottom: 1px solid #00cfb7 !important;
+  }
