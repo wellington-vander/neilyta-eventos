@@ -112,6 +112,8 @@ a {
 
 .modal .modal-content {
     padding: 20px;
+    background-image: url(../img/back-cad.png);
+    background-attachment: fixed;
 }
 #form-cad {
     display: flex;
@@ -130,6 +132,11 @@ a {
 }
 
 .input-cont {
+    margin: 5px 0;
+}
+.btn-cont {
+    display: flex;
+    justify-content: end;
     margin: 5px 0;
 }
 
