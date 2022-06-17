@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,14 +19,14 @@
     <div class="login-container">
         <div class="login-card">
             <img id="ne-logo-login" src="admin/img/ne-logo-login.svg" alt="">
-            <form id="form-login" action="">
+            <form id="form-login" action="admin/val_user.php" method="POST">
                 <div class="input-login">
                     <label class="login-label" for="">Login:</label>
-                    <input type="text" id="login" placeholder="Digite seu login!">
+                    <input type="text" name="login" id="login" placeholder="Digite seu login!">
                 </div>
                 <div class="input-login">
                     <label for="" class="login-label">Senha:</label>
-                    <input type="password" id="pass" value="" placeholder="Digite sua senha">
+                    <input type="password" name="pass" id="pass" value="" placeholder="Digite sua senha">
                 </div>
                 <div class="input-login">
                     <div class="switch">
@@ -37,7 +38,7 @@
                     </div>
                 </div>
                 <div class="login-label">
-                    <button class="btn login-btn">Entrar</button>
+                    <a onclick="verificarLogin()" class="btn login-btn">Entrar</a>
                 </div>
             </form>
         </div>

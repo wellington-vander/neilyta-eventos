@@ -11,16 +11,33 @@ $("#cpf").mask("999.999.999-99");
 
 //Login 
 
-const pass= document.querySelector("#pass");
+const loginForm = document.querySelector("#form-login");
+const loginInput = document.querySelector("#login");
+const passInput = document.querySelector("#pass");
+
 
 const view = () => {
-    if (pass.type === "text") {
-        pass.type = "password";
+    if (passInput.type === "text") {
+        passInput.type = "password";
     } else {
-        pass.type = "text";
+        passInput.type = "text";
     }
 }
 
+
+const verificarLogin = () => {
+    if (loginInput.value === "") {
+        alert("Informe seu endereço de login!");
+        loginInput.focus();
+        return;
+    }
+    if (passInput.value === "") {
+        alert("Informe sua senha!");
+        passInput.focus();
+        return;
+    }
+    loginForm.submit();
+}
 
 
 //CEP - Autocomplete

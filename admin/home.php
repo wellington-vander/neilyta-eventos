@@ -1,3 +1,19 @@
+<?php 
+
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    if (!isset($_SESSION['user'])) {
+        die('
+            <script>
+                alert("Essa página não pode ser acessada sem login!");
+                window.location = "../login.php";
+            </script>
+            ');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,6 +40,7 @@
 
     <div class="sec-bar">
         <p>PAINEL DO ADMINISTRADOR</p>
+        <a href="logout.php" onclick="return confirm('Deseja realmente sair?');" class="btn-small logout-btn" ><i class="material-icons left">directions_walk</i>Sair</a>
     </div>
 
     <div class="pri-container">
@@ -33,14 +50,14 @@
                     <a class="modal-trigger" href="#modal-cad">
                         <div class="collapsible-header">
                             <i class="material-icons cont-icons">add_circle</i>
-                            <label class="cont-label" for="">CADRASTAR USUÁRIO</label>
+                            <label class="cont-label" for="">CADRASTAR CLIENTE</label>
                         </div>
                     </a>
                 </li>
                 <div id="modal-cad" class="modal">
                     <div class="modal-content">
                         <form action="" method="POST" id="form-cad">
-                            <legend>CADRASTAR USUÁRIO</legend>
+                            <legend>CADRASTAR CLIENTE</legend>
                             <br>
                             <div class="colunas">
                                 <div class="input-cont">
@@ -140,6 +157,14 @@
                         </form>
                     </div>
                 </div>
+                <li>
+                    <a class="" href="#">
+                        <div class="collapsible-header">
+                            <i class="material-icons cont-icons">add_circle</i>
+                            <label class="cont-label" for="">LISTAR CLIENTES</label>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
