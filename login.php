@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,9 +18,26 @@
     <div class="login-container">
         <div class="login-card">
             <img id="ne-logo-login" src="admin/img/ne-logo-login.svg" alt="">
-            <form action="">
-                <div class="input-cont">
-                    <input type="text" value="">
+            <form id="form-login" action="">
+                <div class="input-login">
+                    <label class="login-label" for="">Login:</label>
+                    <input type="text" id="login" placeholder="Digite seu login!">
+                </div>
+                <div class="input-login">
+                    <label for="" class="login-label">Senha:</label>
+                    <input type="password" id="pass" value="" placeholder="Digite sua senha">
+                </div>
+                <div class="input-login">
+                    <div class="switch">
+                        <label class="login-label">
+                            <input onclick="view()" type="checkbox">
+                            <span class="lever"></span>
+                            Mostrar Senha
+                        </label>
+                    </div>
+                </div>
+                <div class="login-label">
+                    <button class="btn login-btn">Entrar</button>
                 </div>
             </form>
         </div>

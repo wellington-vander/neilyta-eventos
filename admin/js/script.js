@@ -9,6 +9,20 @@ const instancesSelect = M.FormSelect.init(elemsSelect);
 $("#tel").mask("(99) 99999-99999");
 $("#cpf").mask("999.999.999-99");
 
+//Login 
+
+const pass= document.querySelector("#pass");
+
+const view = () => {
+    if (pass.type === "text") {
+        pass.type = "password";
+    } else {
+        pass.type = "text";
+    }
+}
+
+
+
 //CEP - Autocomplete
 
 const cadForm = document.querySelector("#form-cad");

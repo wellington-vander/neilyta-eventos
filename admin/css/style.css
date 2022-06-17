@@ -13,7 +13,7 @@ body {
 }
 
 #logout-btn:hover {
-    background: linear-gradient(90deg, rgba(98,76,171,1) 0%, rgba(72,34,199,1) 100%) !important;
+    background: linear-gradient(90deg, #624cab 0%, #4822c7 100%) !important;
 }
 
 .login-container {
@@ -25,13 +25,36 @@ body {
     
 }
 
+.input-login input[type=text], input[type=password] {
+    color: #fff;
+}
+
+.input-login input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 2px solid #ffffff !important;
+    box-shadow: none;
+}
+
+.login-label {
+    font-family: 'Kanit', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    color: #fff !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color:rgb(255, 255, 255);
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #ffffff;
+}
+
 #ne-logo-login {
     width: 150px;
     margin: 40px 0 0 0;
 }
 
 .login-card {
-    background-color: rgba(255, 255, 255, 0.363);
+    background-color: #3c00ff8c;
     width: 400px;
     height: 500px;
     border-radius: 20px;
@@ -41,7 +64,33 @@ body {
     align-items: center;
 }
 
+#form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 40px 0 0 0;
+}
 
+.input-login  {
+    margin: 5px 0;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.308) !important;
+    transition: 0;5s;
+    margin: 40px 0 0 0;
+}
+ .login-btn:hover{
+    background-color: #fff !important;
+    color: #4822c7 !important;
+    transition: 0.5s;
+ }
+
+.switch label .lever {
+    margin: 0 10px 0 0;
+}
 
 #nav-logo {
     padding: 14px;
@@ -159,9 +208,6 @@ a {
     text-align: center;
 }
 
-.input-cont {
-    margin: 5px 0;
-}
 .btn-cont {
     display: flex;
     justify-content: end;
@@ -182,7 +228,7 @@ a {
     max-height: 200px !important;
 }
 
-input[type=text]:not(.browser-default) {
+.modal-content input[type=text]:not(.browser-default) {
     height: 2.5rem;
 }
 
