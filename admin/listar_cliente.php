@@ -1,5 +1,7 @@
 <?php
 
+require_once '../conexao.php';
+
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -13,14 +15,6 @@ if (!isset($_SESSION['user'])) {
             ');
 }
 
-    if (isset($_POST['busca'])) {
-        $busca = $_POST['busca'];
-        $estado = $_POST['filtro'];
-
-        if ($estado != "ALL") {
-            $sql_busca = " SELECT ";
-        }
-    }
 
 ?>
 <!DOCTYPE html>
@@ -49,13 +43,13 @@ if (!isset($_SESSION['user'])) {
 
     <div class="sec-bar">
         <p>LISTAR CLIENTES</p>
-        <a href="logout.php" onclick="return confirm('Deseja realmente sair?');" class="btn-small logout-btn"><i class="material-icons left">directions_walk</i>Sair</a>
+        <a href="home.php" class="btn-small logout-btn"><i class="material-icons left">home</i>Home</a>
     </div>
 
     <div class="pri-container">
         <div class="list-cont">
             <div class="pesqbar">
-                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
                     <select id="estado-filter" name="filtro" data-input>
                         <option value="ALL">Estado</option>
                         <option value="ALL">Todos</option>
@@ -91,16 +85,37 @@ if (!isset($_SESSION['user'])) {
                     <button class="btn"><i class="material-icons">search</i></button>
                 </form>
             </div>
+
+            <?php 
+            
+            if (isset($_GET['busca'])) {
+                $busca = $_GET['busca'];
+                $estado = $_GET['filtro'];
+        
+                if ($estado != "ALL") {
+                    $sql = " SELECT * FROM tb_user WHERE cpf_user LIKE '%$busca%' AND estado_user='$estado' OR nome_user LIKE '%$busca%' AND sobre_user='$estado' OR email_user LIKE '%$busca%' AND telefone_user='$estado' OR cep_user LIKE '%$busca%' AND cidade_user='$estado' OR bairro_user LIKE '%$busca%' AND estado_user='$estado' OR cpf_user LIKE '%$busca%' AND estado_user='$estado' OR complemento_user LIKE '%$busca%' AND numero_user='$estado' OR endereco_user LIKE '%$busca%' AND estado_user='$estado' ORDER BY nome_user;";
+                } else {
+                    $sql = "SELECT * FROM tb_user WHERE cpf_user LIKE '%$busca%' OR nome_user LIKE '%$busca%' OR email_user LIKE '%$busca%' OR cep_user LIKE '%$busca%' OR bairro_user LIKE '%$busca%' OR cpf_user LIKE '%$busca%' OR complemento_user LIKE '%$busca%' OR endereco_user LIKE '%$busca%' ORDER BY nome_user;";
+                }
+
+            } else {
+                $sql = "SELECT * FROM tb_user ORDER BY nome_user;";
+            }
+
+            $query = mysqli_query($conn, $sql);
+            if ($query) {
+                while($user = mysqli_fetch_assoc($query)){
+
+            ?>
+
             <div class="list">
                 <i class="material-icons">person</i>
-                <p>Vanderlei Furtuna</p>
-                <a class="btn"href="">detalhes</a>
+                <p><?php echo $user['nome_user'] . ' ' . $user['sobre_user']; ?></p>
+                <p id="estado-list"><?php echo $user['estado_user'];?></p>
+                <a class="btn"href="">Detalhes</a>
             </div>
-            <div class="list">
-                <i class="material-icons">person</i>
-                <p>Wellington de Sousa</p>
-                <a class="btn"href="">detalhes</a>
-            </div>
+            
+            <?php }} ?>
         </div>
     </div>
 

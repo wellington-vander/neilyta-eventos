@@ -170,3 +170,7 @@ const verificar = () => {
     cadForm.submit();
 }
 
+const confirmar = () => {
+    var cpf = "<?php echo $cpf; ?>";
+    window.location = `listar_cliente?busca=${cpf}`;
+}

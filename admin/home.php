@@ -56,37 +56,37 @@
                 </li>
                 <div id="modal-cad" class="modal">
                     <div class="modal-content">
-                        <form action="" method="POST" id="form-cad">
+                        <form action="cad_cliente.php" method="POST" id="form-cad">
                             <legend>CADRASTAR CLIENTE</legend>
                             <br>
                             <div class="colunas">
                                 <div class="input-cont">
                                     <label for="nome" required>Nome</label>
-                                    <input id="nome" type="text" placeholder="Digite o Nome Aqui">
+                                    <input name="nome" id="nome" type="text" placeholder="Digite o Nome Aqui">
                                 </div>
                                 <div class="input-cont">
                                     <label for="sobrenome">Sobrenome</label>
-                                    <input id="sobrenome" type="text" placeholder="Digite o Sobrenome Aqui">
+                                    <input id="sobrenome" name="sobrenome"  type="text" placeholder="Digite o Sobrenome Aqui">
                                 </div>
                             </div>
                             <div class="colunas">
                                 <div class="input-cont">
                                     <label for="email">Email</label>
-                                    <input id="email" type="text" placeholder="Digite o Email Aqui">
+                                    <input id="email" name="email" type="text" placeholder="Digite o Email Aqui">
                                 </div>
                                 <div class="input-cont">
                                     <label for="tel">Telefone:</label>
-                                    <input id="tel" type="text" placeholder="Digite o Telefone Aqui">
+                                    <input id="tel" name="tel" type="text" placeholder="Digite o Telefone Aqui">
                                 </div>
                             </div>
                             <div class="colunas">
                                 <div class="input-cont">
                                     <label for="cpf">CPF:</label>
-                                    <input id="cpf" type="text" placeholder="Digite o CPF Aqui">
+                                    <input id="cpf" name="cpf" type="text" placeholder="Digite o CPF Aqui">
                                 </div>
                                 <div class="input-cont">
                                     <label for="cep">CEP:</label>
-                                    <input id="cep" type="text" placeholder="Digite o CEP Aqui" maxlength="8">
+                                    <input id="cep" name="cep" type="text" placeholder="Digite o CEP Aqui" maxlength="8">
                                 </div>
                             </div>
                             <div class="colunas">
@@ -127,27 +127,27 @@
                                 </div>
                                 <div class="input-cont">
                                     <label for="city">Cidade</label>
-                                    <input id="city" type="text" placeholder="Digite a Cidade Aqui" data-input disabled="disabled">
+                                    <input id="city" name="city" type="text" placeholder="Digite a Cidade Aqui" data-input disabled="disabled">
                                 </div>
                             </div>
                             <div class="colunas">
                                 <div class="input-cont">
                                     <label for="bairro">Bairro</label>
-                                    <input id="bairro" type="text" placeholder="Digite o Bairro Aqui" data-input disabled="disabled">
+                                    <input id="bairro" name="bairro" type="text" placeholder="Digite o Bairro Aqui" data-input disabled="disabled">
                                 </div>
                                 <div class="input-cont">
                                     <label for="end">Endereço:</label>
-                                    <input id="end" type="text" placeholder="Digite o Endereço Aqui" data-input disabled="disabled">
+                                    <input id="end" name="end" type="text" placeholder="Digite o Endereço Aqui" data-input disabled="disabled">
                                 </div>
                             </div>
                             <div class="colunas">
                                 <div class="input-cont">
                                     <label for="num">Número</label>
-                                    <input id="num" type="text" placeholder="Digite o Numero Aqui" data-input disabled="disabled">
+                                    <input id="num" name="num" type="text" placeholder="Digite o Numero Aqui" data-input disabled="disabled">
                                 </div>
                                 <div class="input-cont">
                                     <label for="comp">Complemento:</label>
-                                    <input id="comp" type="text" placeholder="Digite o Complemento Aqui" data-input disabled="disabled">
+                                    <input id="comp" name="comp" type="text" placeholder="Digite o Complemento Aqui" data-input disabled="disabled">
                                 </div>
                             </div>
                             <div class="btn-cont">
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <li>
-                    <a class="" href="#">
+                    <a href="listar_cliente.php">
                         <div class="collapsible-header">
                             <i class="material-icons cont-icons">add_circle</i>
                             <label class="cont-label" for="">LISTAR CLIENTES</label>
