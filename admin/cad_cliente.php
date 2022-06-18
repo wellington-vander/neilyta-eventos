@@ -11,7 +11,7 @@
     
     if (!isset($_SESSION['user'])) {
         die('
-            <script>
+            <script type="text/javascript">
                 alert("Essa página não pode ser acessada sem login!");
                 window.location = "../login.php";
             </script>
@@ -60,7 +60,7 @@
 <?php
     if (mysqli_num_rows($query_cpf)) {
         echo '
-            <script>
+            <script type="text/javascript">
               confirmar();
             </script>
         ';
@@ -72,7 +72,7 @@
 
         if ($query) {
             echo '
-            <script>
+            <script type="text/javascript">
             alert("Cadrasto realizado com sucesso!");
             window.location = "home.php";
             </script>
@@ -80,5 +80,5 @@
         }
     }
 
-    ?>
+?>
     

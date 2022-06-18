@@ -5,7 +5,7 @@
     
     if (!isset($_SESSION['user'])) {
         die('
-            <script>
+            <script type="text/javascript">
                 alert("Essa página não pode ser acessada sem login!");
                 window.location = "../login.php";
             </script>

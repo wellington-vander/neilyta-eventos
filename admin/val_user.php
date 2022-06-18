@@ -27,7 +27,7 @@ if (!isset($_SESSION['user'])) {
             header('Location:home.php');
         } else {
             echo '
-                 <script>
+                 <script type="text/javascript">
                      alert("Senha Incorreta!");
                      window.location = "../login.php";
                  </script>
@@ -35,10 +35,12 @@ if (!isset($_SESSION['user'])) {
         }
     } else {
         echo '
-         <script>
-             alert("Usuário ou Senha Incorretos!")
+         <script type="text/javascript">
+             alert("Usuário ou Senha Incorretos!");
              window.location = "../login.php";
          </script>
          ';
     }
+}else{
+    header('Location:home.php');
 }

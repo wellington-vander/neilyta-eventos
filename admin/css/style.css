@@ -1,5 +1,4 @@
-html,
-:root {
+html,body {
     height: 100%;
 }
 
@@ -12,6 +11,8 @@ body {
 .bg-color {
     background: linear-gradient(90deg, #b49eff52 0%, #3b00ff9c 100%);
 }
+
+/* Tela de Login */
 
 .login-container {
     height: 100vh;
@@ -93,6 +94,8 @@ input[type=password]:focus {
     margin: 0 10px 0 0;
 }
 
+/* Home e Listar */
+
 #nav-logo {
     padding: 14px;
     align-self: center;
@@ -135,8 +138,7 @@ a {
 }
 
 .pri-container {
-    position: fixed;
-    height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -386,4 +388,14 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90deg, #00cfb770 0%, #2bd7c29e 100%);
     transition: 0.5s;
+}
+
+.details-cont {
+    background-color: rgba(255, 255, 255, 0.884);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px 0 0 0;
+    border-radius: 20px;
+    height: 600px;
+    width: 450px;
 }

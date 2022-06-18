@@ -10,7 +10,7 @@
     
     if (!isset($_SESSION['user'])) {
         die('
-            <script>
+            <script type="text/javascript">
                 alert("Essa página não pode ser acessada sem login!");
                 window.location = "../login.php";
             </script>
@@ -42,14 +42,14 @@
     //Se a atualização for concluida, o usuario será redirecionado para página de listar, se não, será avisado que um erro foi encontrado.
     if ($query) {
         echo '
-            <script>
+            <script type="text/javascript">
             alert("Alteração realizada com sucesso!");
             window.location = "listar_cliente.php";
             </script>
             ';
     } else {
         echo '
-            <script>
+            <script type="text/javascript">
             alert("Algo deu errado :( Verifique as informações e tente novamente!");
             window.location = "listar_cliente.php";
             </script>
