@@ -33,6 +33,13 @@
     $complemento = $_POST['comp'];
     $por = $_POST['por'];
 
+    // Verificação do CPF
+    $sql_cpf = "SELECT * FROM tb_user WHERE cpf_user = '$cpf';";
+    $query_cpf = mysqli_query($conn, $sql_cpf);
+    if ($query_cpf) {
+        $dados = mysqli_fetch_assoc($query_cpf);
+        $estado_dados = $dados['estado_user'];
+    }
 ?>
 
 
@@ -40,7 +47,7 @@
     // Função do JS para redirecionar o usuário para tela de listar, caso já exista um cliente com o CPF enviado.
     const confirmar = () => {
     const cpf = "<?php echo $cpf; ?>";
-    const estado = "<?php echo $estado; ?>";
+    const estado = "<?php echo $estado_dados; ?>";
     const conf = confirm("Esse CPF já está vinculado há um cliente. Deseja listá-lo?");
     if (conf == true) {
         window.location = `listar_cliente.php?busca=${cpf}&filtro=${estado}`;    
@@ -51,9 +58,6 @@
 </script>
 
 <?php
-    // Verificação do CPF
-    $sql_cpf = "SELECT * FROM tb_user WHERE cpf_user = '$cpf';";
-    $query_cpf = mysqli_query($conn, $sql_cpf);
     if (mysqli_num_rows($query_cpf)) {
         echo '
             <script>
@@ -77,3 +81,4 @@
     }
 
     ?>
+    
