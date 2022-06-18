@@ -34,10 +34,9 @@ if (!isset($_SESSION['user'])) {
 </head>
 
 <body>
-    <!-- Barra de Navegação -->
     <nav>
         <div class="nav-wrapper bg-color">
-            <a href="#!" class="brand-logo center"><img id="nav-logo" src="img/neilyta.svg" alt="" title="Neilyta Eventos"></a>
+            <a href="home.php" class="brand-logo center"><img id="nav-logo" src="img/neilyta.svg" alt="" title="Neilyta Eventos"></a>
         </div>
     </nav>
 

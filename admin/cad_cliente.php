@@ -1,8 +1,10 @@
 
 <?php 
-
+    // Conexão com o BD
     require_once '../conexao.php';
 
+
+    // Verifica se há um login que permita o acesso a função
     if (!isset($_SESSION)) {
         session_start();
     }
@@ -16,6 +18,7 @@
             ');
     }
 
+    // Recebe os valores do formulario pelo POST
     $nome = $_POST['nome'];
     $sobrenome = $_POST['sobrenome'];
     $email = $_POST['email'];
@@ -32,7 +35,9 @@
 
 ?>
 
+
 <script type="text/javascript">
+    // Função do JS para redirecionar o usuário para tela de listar, caso já exista um cliente com o CPF enviado.
     const confirmar = () => {
     const cpf = "<?php echo $cpf; ?>";
     const estado = "<?php echo $estado; ?>";
@@ -46,6 +51,7 @@
 </script>
 
 <?php
+    // Verificação do CPF
     $sql_cpf = "SELECT * FROM tb_user WHERE cpf_user = '$cpf';";
     $query_cpf = mysqli_query($conn, $sql_cpf);
     if (mysqli_num_rows($query_cpf)) {
@@ -55,7 +61,7 @@
             </script>
         ';
     }else {
-
+        //Cadrasto no BD
         $sql = "INSERT INTO tb_user VALUES (NULL, '$cpf', '$nome', '$sobrenome', '$email', '$telefone', '$cep', '$estado', '$cidade', '$bairro', '$endereco', '$numero', '$complemento', '$por');";
 
         $query = mysqli_query($conn, $sql);
