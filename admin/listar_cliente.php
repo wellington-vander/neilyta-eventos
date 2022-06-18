@@ -81,11 +81,10 @@ if (!isset($_SESSION['user'])) {
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-                    <input type="text" name="busca">
+                    <input type="text" name="busca" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
                     <button class="btn"><i class="material-icons">search</i></button>
                 </form>
             </div>
-
             <?php
 
             if (isset($_GET['busca'])) {
@@ -120,10 +119,11 @@ if (!isset($_SESSION['user'])) {
 
                     <div id="modal-list<?php echo $user['id_user']; ?>" class="modal">
                         <div class="modal-content">
-                            <form action="cad_cliente.php" method="POST" id="form-cad">
+                            <form action="alterar_cliente.php" method="POST" id="form-cad">
                                 <legend>DETALHES DO CLIENTE</legend>
                                 <br>
                                 <div class="colunas">
+                                    <input type="hidden" name="id" value="<?php echo $user['id_user']; ?>">
                                     <div class="input-cont">
                                         <label for="nome" required>Nome*</label>
                                         <input name="nome" value="<?php echo $user['nome_user']; ?>" type="text" placeholder="Digite o Nome Aqui">
@@ -214,16 +214,26 @@ if (!isset($_SESSION['user'])) {
                                         <input name="comp" type="text" value="<?php echo $user['complemento_user']; ?>" placeholder="Digite o Complemento Aqui" data-input>
                                     </div>
                                 </div>
+                                <div class="input-cont">
+                                    <label for="por">Por onde soube?</label>
+                                    <input name="por" value="<?php echo $user['por_onde_soube']; ?>" type="text" placeholder="Por onde/quem você soube do evento?">
+                                </div>
                                 <div class="btn-cont">
-                                    <a class="btn-small waves-effect modal-close"><i class="material-icons left">create</i>Voltar</a>
-                                    <a class="btn-small waves-effect" onclick="return confirm('Deseja realmente ALTERAR? Certifique-se de que nenhum campo obrigatorio * está vazio!');"><i class="material-icons left">create</i>Alterar</a>
-                                    <a class="btn-small red waves-effect" onclick="return confirm('Deseja realmente EXCLUIR? A exclusão NÃO poderá ser desfeita!');"><i class="material-icons left">close</i>Excluir</a>
+                                    <a class="btn-small waves-effect modal-close"><i class="material-icons left">chevron_left</i>Voltar</a>
+                                    <button class="btn-small waves-effect" href="alterar_cliente.php" onclick="return confirm('Deseja realmente ALTERAR? Certifique-se de que nenhum campo obrigatorio * está vazio!');"><i class="material-icons left">create</i>Alterar</button>
+                                    <a class="btn-small red waves-effect" href="excluir_cliente.php?id=<?php echo $user['id_user'];?>" onclick="return confirm('Deseja realmente EXCLUIR? A exclusão NÃO poderá ser desfeita!');"><i class="material-icons left">close</i>Excluir</a>
                                 </div>
                             </form>
                         </div>
                     </div>
             <?php }
-            } ?>
+            } 
+            if (isset($_GET['busca'])) {
+                if (!mysqli_num_rows($query)) {
+                    echo '<p id="legenda">Nenhum cliente encontrado :(</p>';
+                }
+            }
+            ?>
         </div>
     </div>
 

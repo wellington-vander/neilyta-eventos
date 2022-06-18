@@ -2,6 +2,20 @@
 <?php 
 
     require_once '../conexao.php';
+
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+    
+    if (!isset($_SESSION['user'])) {
+        die('
+            <script>
+                alert("Essa página não pode ser acessada sem login!");
+                window.location = "../login.php";
+            </script>
+            ');
+    }
+
     $nome = $_POST['nome'];
     $sobrenome = $_POST['sobrenome'];
     $email = $_POST['email'];
@@ -14,6 +28,7 @@
     $endereco = $_POST['end'];
     $numero = $_POST['num'];
     $complemento = $_POST['comp'];
+    $por = $_POST['por'];
 
 ?>
 
@@ -41,7 +56,7 @@
         ';
     }else {
 
-        $sql = "INSERT INTO tb_user VALUES (NULL, '$cpf', '$nome', '$sobrenome', '$email', '$telefone', '$cep', '$estado', '$cidade', '$bairro', '$endereco', '$numero', '$complemento');";
+        $sql = "INSERT INTO tb_user VALUES (NULL, '$cpf', '$nome', '$sobrenome', '$email', '$telefone', '$cep', '$estado', '$cidade', '$bairro', '$endereco', '$numero', '$complemento', '$por');";
 
         $query = mysqli_query($conn, $sql);
 

@@ -150,6 +150,10 @@
                                     <input id="comp" name="comp" type="text" placeholder="Digite o Complemento Aqui" data-input disabled="disabled">
                                 </div>
                             </div>
+                            <div class="input-cont">
+                                <label for="por">Por onde soube?</label>
+                                <input id="por" name="por" type="text" placeholder="Por onde/quem você soube do evento?">
+                            </div>
                             <div class="btn-cont">
                                 <a class="btn-small waves-effect" onclick="verificar()"><i class="material-icons left">create</i>Cadrastar</a>
                                 <a class="btn-small red waves-effect modal-close"><i class="material-icons left">close</i>Fechar</a>

@@ -166,11 +166,5 @@ const verificar = () => {
         endInput.focus();
         return;
     }
-    alert("Cadrasto Enviado com Sucesso!");
     cadForm.submit();
-}
-
-const confirmar = () => {
-    var cpf = "<?php echo $cpf; ?>";
-    window.location = `listar_cliente?busca=${cpf}`;
 }

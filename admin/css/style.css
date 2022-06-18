@@ -354,15 +354,9 @@ a {
     color: #3c00ff;
 }
 
-.details {
-    background-color: #ffffffde;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    width: 450px;
-    height: 550px;
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    padding: 0 20px;
+#legenda{
+    color: #fff !important;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
 }
