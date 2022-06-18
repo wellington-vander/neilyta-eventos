@@ -390,6 +390,8 @@ a {
     transition: 0.5s;
 }
 
+
+/* Tela de Detalhes - CRUD */
 .details-cont {
     background-color: rgba(255, 255, 255, 0.884);
     backdrop-filter: blur(10px);

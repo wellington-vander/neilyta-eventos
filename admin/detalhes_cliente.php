@@ -60,6 +60,7 @@ if (!isset($_SESSION['user'])) {
                 $user = mysqli_fetch_assoc($query);
             
             ?>
+
             <form action="alterar_cliente.php" method="POST" id="form-cad">
                 <div class="colunas">
                     <input type="hidden" name="id" value="<?php echo $user['id_user']; ?>">

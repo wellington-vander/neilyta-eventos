@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="admin/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="admin/img/favicon-32x32.png">
-    <title>Painel do Admistrador</title>
+    <title>Faça seu Login!</title>
 </head>
 
 <body>
