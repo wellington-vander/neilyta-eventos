@@ -45,7 +45,9 @@
     //CEP - Autocomplete
 
     const cadForm = document.querySelector("#form-cad");
+
     const formInputs = document.querySelectorAll("[data-input]");
+
     const nomeInput = document.querySelector("#nome");
     const sobrenomeInput = document.querySelector("#sobrenome");
     const emailInput = document.querySelector("#email");
@@ -111,6 +113,8 @@
             cityInput.value = "";
             estadoInput.value = "";
             endInput.value = "";
+            bairroInput.value = "";
+            numInput.value = "";
             compInput.value = "";
             return;
         }
@@ -167,7 +171,8 @@
             alert("Informe o bairro!");
             bairroInput.focus();
             return;
-        }if (endInput.value === "") {
+        }
+        if (endInput.value === "") {
             alert("Informe o endereço!");
             endInput.focus();
             return;

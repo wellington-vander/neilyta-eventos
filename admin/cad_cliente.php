@@ -64,7 +64,7 @@
               confirmar();
             </script>
         ';
-    }else {
+    } else {
         //Cadrasto no BD
         $sql = "INSERT INTO tb_user VALUES (NULL, '$cpf', '$nome', '$sobrenome', '$email', '$telefone', '$cep', '$estado', '$cidade', '$bairro', '$endereco', '$numero', '$complemento', '$por');";
 

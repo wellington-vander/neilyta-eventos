@@ -99,8 +99,11 @@ if (!isset($_SESSION['user'])) {
                 if ($estado != "ALL") {
 
                     $sql = " SELECT * FROM tb_user WHERE cpf_user LIKE '%$busca%' AND estado_user='$estado' OR nome_user LIKE '%$busca%' AND sobre_user='$estado' OR email_user LIKE '%$busca%' AND telefone_user='$estado' OR cep_user LIKE '%$busca%' AND cidade_user='$estado' OR bairro_user LIKE '%$busca%' AND estado_user='$estado' OR cpf_user LIKE '%$busca%' AND estado_user='$estado' OR complemento_user LIKE '%$busca%' AND numero_user='$estado' OR endereco_user LIKE '%$busca%' AND estado_user='$estado' ORDER BY nome_user;";
+
                 } else {
+
                     $sql = "SELECT * FROM tb_user WHERE cpf_user LIKE '%$busca%' OR nome_user LIKE '%$busca%' OR email_user LIKE '%$busca%' OR cep_user LIKE '%$busca%' OR bairro_user LIKE '%$busca%' OR cpf_user LIKE '%$busca%' OR complemento_user LIKE '%$busca%' OR endereco_user LIKE '%$busca%' ORDER BY nome_user;";
+                    
                 }
             } else {
 
