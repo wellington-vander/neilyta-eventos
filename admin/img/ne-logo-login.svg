@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="inkporter-svg-s6fep_dt.svg"
+   sodipodi:docname="ne-logo-login.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.56"
-     inkscape:cx="-1681.4453"
-     inkscape:cy="399.41406"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="26.378398"
+     inkscape:cy="17.815776"
      inkscape:window-width="1366"
      inkscape:window-height="697"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1136" />
+     inkscape:current-layer="text8641" />
   <defs
      id="defs2">
     <rect
@@ -55,17 +55,67 @@
            id="text1440"
            style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1442);mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
            d="m -449.8914,106.97177 -1.60869,9.80043 h 3.52433 l 0.8046,-4.91081 1.98955,4.91081 h 3.52433 l 1.60869,-9.80043 h -3.52434 l -0.709,4.32842 -2.08514,-4.32842 z m 10.80089,0 -0.38499,2.33526 h 7.7065 l 0.38448,-2.33526 z m -0.62167,3.73259 -0.33435,2.33526 h 6.65645 l 0.33434,-2.33526 z m -0.60875,3.73259 -0.38499,2.33525 h 7.74837 l 0.38499,-2.33525 z" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.30759px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0576899"
-           x="-451.69144"
-           y="120.00758"
-           id="text8641"><tspan
-             sodipodi:role="line"
-             id="tspan8639"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1;stroke-width:0.0576899"
-             x="-451.69144"
-             y="120.00758">NEILYTA EVENTOS</tspan></text>
+        <g
+           aria-label="NEILYTA EVENTOS"
+           id="text8641"
+           style="font-size:2.30759px;line-height:1.25;fill:#dc9f9f;fill-opacity:1;stroke-width:0.0576899">
+          <path
+             d="m -450.50995,120.00758 -0.68766,-0.95765 v 0.95765 h -0.34614 v -1.61531 h 0.31845 l 0.68997,0.95996 v -0.95996 h 0.34613 v 1.61531 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path864" />
+          <path
+             d="m -448.86003,119.68452 v 0.32306 h -1.02226 v -1.61531 h 1.00842 v 0.32306 h -0.6669 v 0.32307 h 0.50075 v 0.32306 h -0.50075 v 0.32306 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path866" />
+          <path
+             d="m -448.26467,120.00758 h -0.34614 v -1.61531 h 0.34614 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path868" />
+          <path
+             d="m -446.91474,119.68452 v 0.32306 h -1.03149 v -1.61531 h 0.34152 v 1.29225 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path870" />
+          <path
+             d="m -445.60634,118.39227 -0.52844,1.02457 v 0.59074 h -0.34613 v -0.59074 l -0.52844,-1.02457 h 0.35998 l 0.34152,0.69459 0.34153,-0.69459 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path872" />
+          <path
+             d="m -444.1641,118.71533 h -0.46844 v 1.29225 h -0.34614 v -1.29225 h -0.47074 v -0.32306 h 1.28532 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path874" />
+          <path
+             d="m -443.128,119.73529 h -0.60459 l -0.0877,0.27229 h -0.37383 l 0.55382,-1.61531 h 0.42229 l 0.55151,1.61531 h -0.37152 z m -0.10615,-0.32306 -0.19614,-0.59998 -0.19615,0.59998 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path876" />
+          <path
+             d="m -440.74195,119.68452 v 0.32306 h -1.02227 v -1.61531 h 1.00842 v 0.32306 h -0.66689 v 0.32307 h 0.50075 v 0.32306 h -0.50075 v 0.32306 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path878" />
+          <path
+             d="m -439.03203,118.39227 -0.55382,1.61531 h -0.43614 l -0.55151,-1.61531 h 0.37844 l 0.39229,1.19533 0.38999,-1.19533 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path880" />
+          <path
+             d="m -437.77209,119.68452 v 0.32306 h -1.02227 v -1.61531 h 1.00842 v 0.32306 h -0.66689 v 0.32307 h 0.50075 v 0.32306 h -0.50075 v 0.32306 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path882" />
+          <path
+             d="m -436.50061,120.00758 -0.68767,-0.95765 v 0.95765 h -0.34613 v -1.61531 h 0.31844 l 0.68997,0.95996 v -0.95996 h 0.34614 v 1.61531 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path884" />
+          <path
+             d="m -434.66839,118.71533 h -0.46844 v 1.29225 h -0.34614 v -1.29225 h -0.47075 v -0.32306 h 1.28533 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path886" />
+          <path
+             d="m -433.71075,118.34612 q 0.17769,0 0.3323,0.0692 0.15691,0.0669 0.27229,0.1846 0.11538,0.11538 0.1823,0.26999 0.0669,0.15461 0.0669,0.32999 0,0.17768 -0.0692,0.3346 -0.0669,0.15461 -0.18461,0.26999 -0.11538,0.11538 -0.26999,0.1823 -0.15461,0.0669 -0.32999,0.0669 -0.17768,0 -0.3346,-0.0669 -0.1546,-0.0692 -0.26998,-0.18461 -0.11538,-0.11769 -0.1823,-0.2723 -0.0669,-0.15461 -0.0669,-0.32998 0,-0.17769 0.0669,-0.3323 0.0692,-0.15691 0.1846,-0.27229 0.11538,-0.11538 0.26999,-0.1823 0.15692,-0.0669 0.33229,-0.0669 z m 0,1.38686 q 0.10385,0 0.19615,-0.0438 0.0923,-0.0438 0.16153,-0.11769 0.0692,-0.0738 0.10846,-0.17076 0.0392,-0.0969 0.0392,-0.20076 0,-0.10384 -0.0392,-0.20076 -0.0392,-0.0969 -0.10846,-0.16846 -0.0692,-0.0738 -0.16153,-0.11768 -0.0923,-0.0439 -0.19615,-0.0439 -0.10384,0 -0.19614,0.0439 -0.0923,0.0438 -0.16153,0.11768 -0.0692,0.0715 -0.10846,0.16846 -0.0392,0.0969 -0.0392,0.20076 0,0.10384 0.0392,0.20076 0.0392,0.0969 0.10846,0.17076 0.0692,0.0738 0.16153,0.11769 0.0923,0.0438 0.19614,0.0438 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path888" />
+          <path
+             d="m -431.34085,119.56222 q 0,0.13845 -0.0577,0.23307 -0.0554,0.0923 -0.15,0.14999 -0.0946,0.0554 -0.21691,0.0808 -0.11999,0.0254 -0.24691,0.0254 -0.22153,0 -0.38768,-0.10384 -0.16384,-0.10385 -0.26998,-0.26307 l 0.3046,-0.17999 q 0.0254,0.0438 0.0623,0.0854 0.0392,0.0392 0.0854,0.0715 0.0462,0.03 0.0992,0.0508 0.0554,0.0185 0.11076,0.0185 0.0462,0 0.10154,-0.005 0.0554,-0.007 0.10384,-0.0231 0.0485,-0.0185 0.0808,-0.0485 0.0323,-0.03 0.0323,-0.0808 0,-0.0438 -0.0277,-0.0738 -0.0254,-0.03 -0.0715,-0.0531 -0.0462,-0.0231 -0.10846,-0.0392 -0.0623,-0.0162 -0.13384,-0.0323 -0.0946,-0.0208 -0.19845,-0.0508 -0.10385,-0.0323 -0.19153,-0.0877 -0.0854,-0.0554 -0.14308,-0.14307 -0.0554,-0.09 -0.0554,-0.22845 0,-0.12692 0.0508,-0.22384 0.0508,-0.0992 0.13384,-0.16384 0.0831,-0.0646 0.18922,-0.0969 0.10615,-0.0346 0.21692,-0.0346 0.20306,0 0.36229,0.0992 0.16153,0.0969 0.27229,0.25152 l -0.28845,0.19615 q -0.0208,-0.0392 -0.0554,-0.0785 -0.0346,-0.0392 -0.0785,-0.0715 -0.0438,-0.0323 -0.0969,-0.0531 -0.0508,-0.0208 -0.10846,-0.0208 -0.0439,0 -0.0877,0.0115 -0.0438,0.0115 -0.0808,0.0346 -0.0346,0.0231 -0.0577,0.0577 -0.0231,0.0323 -0.0231,0.0738 0,0.0369 0.0254,0.0646 0.0254,0.0254 0.0669,0.0461 0.0439,0.0185 0.0992,0.0346 0.0577,0.0162 0.1223,0.0323 0.10154,0.0254 0.20999,0.06 0.10846,0.0323 0.19845,0.0923 0.09,0.0577 0.14769,0.14999 0.06,0.0923 0.06,0.23538 z"
+             style="font-family:RETROICA;-inkscape-font-specification:RETROICA;fill:#ffffff;fill-opacity:1"
+             id="path890" />
+        </g>
       </g>
     </g>
   </g>
