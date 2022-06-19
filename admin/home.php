@@ -209,7 +209,7 @@
                 <li>
                     <a href="listar_cliente.php">
                         <div class="collapsible-header">
-                            <i class="material-icons cont-icons">add_circle</i>
+                            <i class="material-icons cont-icons">view_list</i>
                             <label class="cont-label" for="">LISTAR CLIENTES</label>
                         </div>
                     </a>
