@@ -54,6 +54,8 @@ Com o phpMyAdmin aberto, utilize o usuário e a senha definidas na instalação,
 
 Na tela principal, acesse a opção **Importar** e clique no botão **Escolher arquivo**. Na tela de arquivos, vá até `neilyta-eventos` e selecione o arquivo `bd_neilita_eventos.sql`, desça até o rodapé do site e aperte em **Executar**, uma mensagem de confirmação será exibida em verde e mais uma etapa do processo estará concluida.
 
+> Os clientes pre-cadrastados no banco de dados são ficticios.
+
 ### Passo 3 - Alterando o modulo de conexão com o banco de dados
 Para que as funções do site se conectem com o banco de dados, um modulo de conexão é estabalecido no inico de cada arquivo. As informações necessarias para a conexão são repassadas em um unico arquivo que é chamado em todos os outros. ele é nomeado de `conexao.php`.
 
