@@ -65,7 +65,7 @@
         // Aceitar apenas números
     cepInput.addEventListener("keypress", (e) => {
         const apenasNum = /[0-9]/;
-        const key = String.fromCharCode(e.keyCode)
+        const key = String.fromCharCode(e.keyCode);
 
         if (!apenasNum.test(key)) {
             e.preventDefault();
@@ -100,8 +100,6 @@
         const apiUrl = `https://viacep.com.br/ws/${cep}/json/`;
         const response = await fetch(apiUrl);
         const dados = await response.json();
-
-        console.log(dados);
 
         if (dados.erro === "true") {
             if (!cityInput.hasAttribute("disabled")) {
